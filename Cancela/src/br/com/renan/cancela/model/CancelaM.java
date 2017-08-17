@@ -2,37 +2,29 @@ package br.com.renan.cancela.model;
 
 public class CancelaM {
 
-	private boolean abrir;
-	private boolean fechar;
-	public String getPosicao(){
-		return posicao;
+	private String nome;
+	public boolean isPosicao(){
+	return posicao;
 	}
 	
-	public void setPosicao(String posicao){
+	public void setPosicao(String nome,boolean posicao){
+		this.nome = nome;
 		this.posicao = posicao;
 	}
-	private String posicao;
+	private boolean posicao;
 	
-	public CancelaM(boolean abrir, boolean fechar, String posicao){
-		this.abrir = abrir;
-		this.fechar = fechar;
+	public CancelaM(String nome, boolean isPosicao){
+		this.nome = nome;
 		this.posicao = posicao;
 	}
 
-	public boolean isAbrir() {
-		return abrir;
+
+	public String getNome() {
+		return nome;
 	}
 
-	public void setAbrir(boolean abrir) {
-		this.abrir = abrir;
-	}
-
-	public boolean isFechar() {
-		return fechar;
-	}
-
-	public void setFechar(boolean fechar) {
-		this.fechar = fechar;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 
