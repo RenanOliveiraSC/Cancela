@@ -13,7 +13,7 @@ public class CancelaM {
 	}
 	private boolean posicao;
 	
-	public CancelaM(String nome, boolean isPosicao){
+	public CancelaM(String nome, boolean posicao){
 		this.nome = nome;
 		this.posicao = posicao;
 	}

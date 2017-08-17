@@ -30,7 +30,7 @@ public class CancelaD {
 		String sql = "UPDATE CANCELA SET POSICAO = 1 WHERE NOME = ?";
 
 		PreparedStatement statement = con.prepareStatement(sql);
-		statement.setString(1, "nome");
+		statement.setString(1, nome);
 		return statement.executeUpdate() > 0;
 
 	}
@@ -39,7 +39,7 @@ public class CancelaD {
 		String sql = "UPDATE CANCELA SET POSICAO = 0 WHERE NOME = ?";
 
 		PreparedStatement statement = con.prepareStatement(sql);
-		statement.setString(1, "nome");
+		statement.setString(1, nome);
 		return statement.executeUpdate() > 0;
 
 	}
