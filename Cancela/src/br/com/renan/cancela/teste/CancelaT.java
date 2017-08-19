@@ -12,7 +12,7 @@ public class CancelaT {
 		
 		CancelaS cancelaService = new CancelaS();
 		
-		//CancelaM cancela = new CancelaM("Saída", false);
+		CancelaM cancela = new CancelaM("Saída", false);
 		//cancelaService.inseri(cancela);
 		
 		//cancelaService.abrir("Entrada");
